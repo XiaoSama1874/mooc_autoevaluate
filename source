@@ -1,0 +1,14 @@
+@author XiaoSama
+@date 2018.11.22
+@how to use : F12 enter the console panel copy the code  and run it using (enter)
+lists = document.getElementsByClassName("j-content");
+for (i = 0; i < lists.length; i++) {
+    list = lists[i];
+    evaluate_list = list.getElementsByClassName("s");
+    for (var j = 0; j < evaluate_list.length; j++) {
+        evaluate_list[j].lastElementChild.firstElementChild.checked=true
+    }
+    comment = list.getElementsByTagName("textarea")[0];
+    comment.value = "做的好";
+}
+document.getElementsByClassName('j-submitbtn')[0].click();
